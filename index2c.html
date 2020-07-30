@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index2.css">
+        <title>MBS</title>
+    </head>
+    <body>
+        <div class="container-fluid"></div>
+            <div class="row">
+                <div class="col-lg-12"> <!--id="cabecera">-->
+                    <header>   
+                        <div>
+                            <nav class="navbar navbar-light bg-light" style="background: inherit;">
+                                <!--<li id="nombre"><div>-->
+                                    <span class="navbar-brand mb-0 h1  navegacion">Marcelino Bazzana Sosa</span>
+                                    <ul>
+                                        <li class="nav-item dropdown">
+                                            <div class="btn-group boton">
+                                                <button class="btn btn-secondary btn-sm">
+                                                    <a class="nav-link dropdown-toggle boton" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Menú
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                        <a class="dropdown-item" href="index2.html">Inicio</a>
+                                                        <a class="dropdown-item" href="index2y.html">Sobre mí</a>
+                                                        <a class="dropdown-item" href="index2cv.html">Formación</a>
+                                                        <a class="dropdown-item" href="index2p.html">Portfolio</a>
+                                                        <a class="dropdown-item" href="index2c.html">Contacto</a>
+                                                    </div>
+                                                </button>
+                                        
+                                            
+                                                <button type="button" class="btn btn-secondary btn-sm"><a class="boton" lang href="index22.html">EN</a></button>
+                                                <button type="button" class="btn btn-secondary btn-sm"><a class="boton" href="index222.html">DE</a></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cuerpo col-md-7" id="izquierda">
+                    <section id="hola">
+                        <form class="col-sm-9 offset-2" action="" method="POST" enctype="text/plain">
+                            <div class="form-group">
+                              <label for="nombre-f">Nombre</label>
+                              <input type="text" class="form-control" id="nombre-f" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-f">E-mail</label>
+                                <input type="email" class="form-control" id="email-f" required>
+                              </div>
+                            <div class="form-group">
+                              <label for="mensaje-f">Mensaje</label>
+                              <textarea class="form-control" id="mensaje-f" rows="3" required></textarea>
+                            </div>
+                          </form>
+                          <button type="button submit" class="btn btn-light rght msg-send">Enviar</button>               
+                    </section>
+                </div>
+                <div class="cuerpo col-md-5" id="derecha">
+                    <section>
+                        <div class="col-sm-6 offset-1">
+                            <div class="iconos-cont">
+                                <img src="mail 1.png" class="cont-ic" height="40" width="40">
+                                <p class="lineal text-cv">bazzanamarce@gmail.com</p>
+                            </div>
+                            <div class="iconos-cont-2">
+                                <img src="linkedin 1.png" class="cont-ic" height="40" width="40">
+                                <p class="lineal text-cv">/marcelino-bazzana-sosa</p>
+                            </div>
+                            <div class="iconos-cont-2">
+                                <img src="instagram 1.png" height="40" width="40">
+                                <p class="lineal text-cv">@marcebazzana</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyC3Fc6iGUtx8v5UjqOmktSSQuWOB2kMWnI",
+            authDomain: "paginapersonal-a91e7.firebaseapp.com",
+            databaseURL: "https://paginapersonal-a91e7.firebaseio.com",
+            projectId: "paginapersonal-a91e7",
+            storageBucket: "paginapersonal-a91e7.appspot.com",
+            messagingSenderId: "73063092185",
+            appId: "1:73063092185:web:a48211518bbe1bc88053c8",
+            measurementId: "G-FYLSY8BSWN"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>

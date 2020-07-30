@@ -1,0 +1,134 @@
+body{
+    background-image: url(Fondo-Web-Marce-1.jpg) !important;
+}
+.cabecera{
+    align-items: normal;
+    height: 30px;
+    border: none;
+    background-color: none;
+}
+#nombre{
+    height: 60px;
+    text-align: left;
+}
+.idioma{
+    width: 5%;
+    text-align: right;
+    font-size: 20px;
+    height: 60px;
+}
+.cuerpo{
+    height: 600px;
+    border: none;
+    float: left;
+}
+#name-inicio{
+    text-align: center;
+    margin-top: 11%;
+    font-family: 'Oswald', sans-serif;
+    color: lavender;
+}
+#name-inicio h1{
+    font-size: 65px;
+}
+.opciones{
+    background-color: inherit;
+    /*padding: 25px;*/
+    text-align: center !important;
+}
+.opciones-inicio{
+    text-align: center;
+    margin-top: 5%;
+}
+.opciones-inicio h2{
+    background-color: inherit !important;
+}
+.opciones-inicio h2 a{
+    text-decoration: none;
+    /*color: rgb(226, 220, 210) !important;*/
+    color: lightblue;
+}
+#derecha{
+    background-color: inherit;
+}
+#foto{
+    margin-top: 10%;
+}
+/*.img-thumbnail{
+    background-color: inherit;
+    padding: inherit;
+}*/
+.boton{
+    float: left;
+    color: white !important;
+}
+ul{
+    list-style: none;
+}
+#nm{
+    font-size: 35px;
+    font-family: "Verdana", sans-serif;
+    color: #990000;
+    text-align: center;
+    background-color: inherit;
+}
+.navegacion{
+    background-color: none !important;
+    color: lavender !important;
+    font-size: 34px !important;
+    font-family: 'Oswald', sans-serif;
+}
+.nav-in{
+    visibility: hidden;
+}
+.navbar{
+    background-color: inherit !important;
+}
+.dropdown-toggle{
+    float: left;
+}
+section .text{
+    color: lavender;
+    text-align: justify;
+    font-size: 15px;
+    margin-left: 7.3%;
+    margin-top: 4.7%;
+}
+.tit{
+    color: lightblue;
+    text-align: justify;
+    margin-left: 12%;
+    margin-top: 4.7%;
+}
+.text-cv{
+    color: lavender !important;
+    font-size: 15px;
+}
+#cvt{
+    text-align: left;
+}
+/*.cont-ic{
+    margin-left: 10px;
+    margin-top: 50%;
+}*/
+.form-group label{
+    color: lavender;
+}
+form{
+    margin-top: 10%;
+    
+}
+.iconos-cont{
+    margin-top: 50%;
+}
+.iconos-cont-2{
+    margin-top: 20%;
+}
+.lineal{
+    display: inline;
+}
+.rght{
+    float: right;
+    margin-right: 80px;
+    
+}
