@@ -129,6 +129,10 @@ form{
 }
 .rght{
     float: right;
-    margin-right: 80px;
-    
+    margin-right: 80px;   
+}
+.contenedor-centrar{    /*Los elementos hijos estarán centrados respecto a este elemento (padre)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

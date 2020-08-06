@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mostrarMensaje contenedor-centrar"></div>
+    <div>
+        <h3>Formación</h3>
+        <ul class="panelFormacion"></ul>
+    </div>
+    <div>
+        <h3>Cursos</h3>
+        <ul class="panelCursos"></ul>
+    </div>
+    <div>
+        <h3>Idiomas</h3>
+        <ul class="panelIdiomas"></ul>
+    </div>
+    <div class="editarcv">
+        <div class="formularioCrearFormacion formularioCrearCursos">
+            <h2>Crear Formación</h2>
+            <input type="text" placeholder="Título" class="fTitulo">
+            <input type="text" placeholder="Institución" class="fInstitucion">
+            <input type="text" placeholder="Lugar" class="fLugar">
+            <input type="text" placeholder="Período" class="fPeriodo">
+            <input type="text" placeholder="Estado" class="fEstado">
+            <button class="guardarFormacion">Guardar formación</button>
+            <button class="guardarCursos">Guardar Cursos</button>
+        </div>
+        <div class="formularioCrearIdiomas">
+            <input type="text" placeholder="Idioma" class="fIdioma">
+            <input type="text" placeholder="Nivel" class="fNivel">
+            <input type="text" placeholder="Formación" class="fFormacion">
+            <button class="guardarIdiomas">Guardar Idiomas</button>
+        </div>
+        <div class="formularioEditarFormacion" style="display: none;">
+            <p class="id-editar"></p>
+            <input type="text" placeholder="Título" class="fTitulo-e">
+            <input type="text" placeholder="Institución" class="fInstitucion-e">
+            <input type="text" placeholder="Lugar" class="fLugar-e">
+            <input type="text" placeholder="Período" class="fPeriodo-e">
+            <input type="text" placeholder="Estado" class="fEstado-e">
+            <input type="text" placeholder="Path Database" list="path" class="path-e">
+            <datalist id="path">
+                <option value="formacion"></option>
+                <option value="cursos"></option>
+            </datalist>
+            <button class="editarFormacion">Guardar</button>
+        </div>
+        <div class="formularioEditarIdiomas" style="display: none;">
+            <p class="id-editar"></p>
+            <input type="text" placeholder="Idioma" class="fIdioma-e">
+            <input type="text" placeholder="Nivel" class="fNivel-e">
+            <input type="text" placeholder="Formación" class="fFormacion-e">
+            <button class="editarIdiomas">Guardar</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+    apiKey: "AIzaSyC3Fc6iGUtx8v5UjqOmktSSQuWOB2kMWnI",
+    authDomain: "paginapersonal-a91e7.firebaseapp.com",
+    databaseURL: "https://paginapersonal-a91e7.firebaseio.com",
+    projectId: "paginapersonal-a91e7",
+    storageBucket: "paginapersonal-a91e7.appspot.com",
+    messagingSenderId: "73063092185",
+    appId: "1:73063092185:web:a48211518bbe1bc88053c8",
+    measurementId: "G-FYLSY8BSWN"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
